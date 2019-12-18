@@ -41,15 +41,24 @@ body {
     text-align: center;
     font-style: italic;
     margin-bottom: 15px;
-    
+    padding: 5px;
 }
 
 .section-steps {
-
+    line-height: 2;
 }
 
 .table {
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+
+.exp-table {
+    border:1px solid black;
 }
 
 h3 {
@@ -57,5 +66,6 @@ h3 {
 }
 
 footer {
-
+    position: sticky;
+    justify-content: baseline;
 }
