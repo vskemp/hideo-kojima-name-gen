@@ -37,34 +37,34 @@
         <div class="section-num">
             <div class="section-header">Section 2: Personal Information</div>
                 <div class="section-info"> Kojima's characters have names that are directly related to their own character traits. This information will make sure your name fits your personality. Please fill in the blanks.</div>
-                    <a class="section-steps">1. What is your full name? <!--Insert Input--><br>
-                    2. What do you do at your occupation?<br> <!--Insert Input-->
-                        <div class="text-indent">2a. Condense the verb in your answer into a single -er noun. (e.g if you are a sheep farmer, your answer will be "farmer")<!--Insert Input--><br> <!--Insert Input--></div>
-                    3. What was your first pet's specific species/breed? If you never had a pet, please answer with an animal you wish you owned. <!--Insert Input--><br>
-                    4. What's your most embarassing childhood memory? Be specific. <!--Insert Input--> <br>
-                        <div class="text-indent"> 4a. Condense this story into two words. <!--Insert Input--><br></div>
-                    5. What is the object you'd least like to be stabbed by?<!--Insert Input--><br>
-                    6. What is something you are good at? (Verb ending in -ing)<!--Insert Input--><br>
-                    7. How many carrots do you believe you could eat in one sitting, if someone, like, forced you to eat as many carrots as possible?<!--Insert Input--><br>
-                    8. What is your greatest intagable fear? (e.g. death, loneliness, fear itself)<!--Insert Input--><br>
-                    9. What is your greatest tangable fear? (e.g. horses)<!--Insert Input --><br>
-                    10. What is the last thing you did before starting this quiz?<!--Insert Input--><br>
-                    11. What condition is your body currently in? (single word answer)<!--Insert Input--><br>
-                    12. Favorite state of matter?<!--Insert Input--><br>
-                    13. A word your name kind of sounds like? (e.g Brian -> Brain)<!--Insert Input--><br>
-                    14. What is your Zodiac sign?<!--Insert Input--><br>
-                    15. If you had to define your personality in one word, what would it be?<!--Insert Input--><br>
+                    <a class="section-steps">1. What is your full name? <input type="text" id="fullName"><br>
+                    2. What do you do at your occupation? <input type="text" id="occupation"><br>
+                        <div class="text-indent">2a. Condense the verb in your answer into a single -er noun. (e.g if you are a sheep farmer, your answer will be "farmer")<input type="text" id="oneOccupation"><br> <!--Insert Input--></div>
+                    3. What was your first pet's specific species/breed? If you never had a pet, please answer with an animal you wish you owned. <input type="text" id="petType"><br>
+                    4. What's your most embarassing childhood memory? Be specific.<input type="text" id="memory"><br>
+                        <div class="text-indent"> 4a. Condense this story into two words. <input type="text" id="twoMemory"><br></div>
+                    5. What is the object you'd least like to be stabbed by?<input type="text" id="stabbedBy"><br>
+                    6. What is something you are good at? (Verb ending in -ing)<input type="text" id="goodAt"><br>
+                    7. How many carrots do you believe you could eat in one sitting, if someone, like, forced you to eat as many carrots as possible?<input type="text" id="carrotNum"><br>
+                    8. What is your greatest intagable fear? (e.g. death, loneliness, fear itself)<input type="text" id="intanFear"><br>
+                    9. What is your greatest tangable fear? (e.g. horses)<input type="text" id="tanFear"><br>
+                    10. What is the last thing you did before starting this quiz?<input type="text" id="beforeQuiz"><br>
+                    11. What condition is your body currently in? (single word answer)<input type="text" id="bodyCondition"><br>
+                    12. Favorite state of matter?<input type="text" id="favMatter"><br>
+                    13. A word your name kind of sounds like? (e.g Brian -> Brain)<input type="text" id="nameSound"><br>
+                    14. What is your Zodiac sign?<input type="text" id="zodiacSign"><br>
+                    15. If you had to define your personality in one word, what would it be?<input type="text" id="onePersonality"><br>
         </a>
         <div class="section-num">
             <div class="section-header"> Section 3: Kojima Information</div>
                 <div class="section-info"> Kojima character names reflect his own idiosyncrasies. He can't help himself. Please fill in the blanks.</div>
-                    <a class="section-steps"> 16. Who is your favorite film character? (NOTE: must be played by Kurt Russell)<!--Insert Input--><br>
-                    17. What is the last word of the title of your favorite Kubrik film?<!--Insert Input--><br>
-                    18. What is the first word in the title of your favorite Joy Division album?<!--Insert Input--><br>
-                    19. What is a scientific term you picked up from listening to NPR once?<!--Insert Input--><br>
-                    20. What is a piece of military hardware you think looks cool even though war is bad?<!--Insert Input--><br>
-                    21. What is something you'd enjoy watching Mads Mikkelsen do?<!--Insert Input--><br>
-                        <div class="text-indent"> 21a. Please condense into one word.<!--Insert Input--></div>
+                    <a class="section-steps"> 16. Who is your favorite film character? (NOTE: must be played by Kurt Russell)<input type="text" id="kurtRussell"><br>
+                    17. What is the last word of the title of your favorite Kubrik film?<input type="text" id="kubrikFilm"><br>
+                    18. What is the first word in the title of your favorite Joy Division album?<input type="text" id="joyDivision"><br>
+                    19. What is a scientific term you picked up from listening to NPR once?<input type="text" id="nprTerm"><br>
+                    20. What is a piece of military hardware you think looks cool even though war is bad?<input type="text" id="warBad"><br>
+                    21. What is something you'd enjoy watching Mads Mikkelsen do?<input type="text" id="madsMikkelson"><br>
+                        <div class="text-indent"> 21a. Please condense into one word.<input type="text" id="madsOne"></div>
                     </a>
         </div>
         <div class="section-num">
@@ -163,6 +163,7 @@
                 <div class="section-info">Kojima's early work includes lots of characters that have names that are widely considered to be "normal". Was this just because, in the early years, he didn't have the power to say, "I'm Hideo Kojima, I can name someone Die-Hardman if I want to" without people questioning him? Probably.</div>
                     <a class="section-steps"> 1. ________<!--Insert Sec 2 #1 Answer Here--> This is your full name.<br>
                     2.+ ________ Conditions you accured in Section 4. <!--Section 4 Conditions--><br>
+                    <button onclick="clickForName()">Click Here To Generate Your Name</button><br>
                     3. That is your name: _______<!--Insert Both Here--> Your Kojima name is probably just your actual name. Sorry if you were expecting something wild. Skip to Section 13.<br>
                     </a>
         </div>
@@ -192,7 +193,8 @@
                             </label>
                         </div>
                         3. +________ Any conditions you accured in Section 4.<!--Insert Section 4--><br>
-                    4. _________<!--Insert Both--> That is your Kojima name. Skip to Section 13.<br>
+                        <button onclick="clickForName()">Click Here To Generate Your Name</button><br>
+                    4. _________<!--Insert Both--> That is your name. Skip to Section 13.<br>
                     </a>
         </div>
         <div class="section-num">
@@ -226,6 +228,7 @@
                     </label>
                     <br>
                     4. +______ Conditions you accured in Section 4.<!--Inser Here--><br>
+                    <button onclick="clickForName()">Click Here To Generate Your Name</button><br>
                     5. _______<!--Insert All-->That's your Kojima name. Skip to Section 13.
                     </a>
         </div>
@@ -256,6 +259,7 @@
                         </div>
                         </div>
                     3. +______ Conditions you accured in Section 4.<!--insert here--><br>
+                    <button onclick="clickForName()">Click Here To Generate Your Name</button><br>
                     4. _______<!--insert all--> That's your name. Skip to Section 13.</b>
                     </a>
         </div>
@@ -295,6 +299,7 @@
                             </label>
                         </div>
                     3. +______ Conditions you accured from Section 4.<!--insert here--><br>
+                    <button onclick="clickForName()">Click Here To Generate Your Name</button><br>
                     4. _______<!--insert all--> That's your name. Skip to Section 13.<br>
                     </a>
         </div>    
@@ -323,6 +328,7 @@
                                 <input type="checkbox"></input>
                             </label>
                         </div>
+                    <button onclick="clickForName()">Click Here To Generate Your Name</button><br>
                     3. _______<!--insert all-->That's your name. Skip to Section 13.<br>
                     </a>
         </div>
@@ -330,7 +336,8 @@
             <div class="section-header">Section 12: Name That Lacks Subtext</div>
                 <div class="section-info"> Sometimes, Kojima gives up and just names a character exacytly what they are. Congradulations. You are exactly what you do.</div>
                     <a class="section-steps">5. Answers from Section 2, Number 10: _______<!--insert here-->This is your full name.<br>
-                    6.______<!--insert sec 4--><br>
+                    6.+______ Conditions accured in Section 4.<!--insert sec 4--><br>
+                    <button onclick="clickForName()">Click Here To Generate Your Name</button><br>
                     7. _____<!--insert all-->That's your name. Skip to Section 13.<br>
                 </a>
         </div>
@@ -338,7 +345,7 @@
             <div class="section-header">Section 13: Explaining Your Name</div>
                 <div class="section-info"> Kojima's characters know that their names are meaningful, and they will tell you it completely unprompted. you, too, must explain your name to any potential friends, foes, or shadowy government institutions.</div>
                     <a class="section-steps"> 1. Use the following to fill in your monologue. Explain your Kojima name to the best of your ability. Feel free to draw from personal experience, friendships you;ve had, or just say some guy on the internet made you fill out this quiz to gain this name. Here's a start:<br>
-                        <div class="exp-table">"Hi, I'm ______________<!---insert final name-->, and if you're wondering how I got this name, well, let me tell you. I _________________________<br>
+                        <div class="exp-table">"Hi, I'm ______________<!---insert final name-->, and if you're wondering how I got this name, well, let me tell you. I <input type="text" id="gotMyName"><br>
                         </div>
                     </a>
             </div>
