@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 100px;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.title-name {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.intro {
+    text-align: center;
+
+}
+
+.dice-roller {
+    text-align: center;
+}
+
+.text-indent {
+    text-indent: 5%;
+}
+
+.section-header {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    padding-top: 4%;
+}
+
+.section-info {
+    border: 2px solid black;
+    background-color: lightgray;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 15px;
+    
+}
+
+.section-steps {
+
+}
+
+.table {
+    border: 1px solid black;
+}
+
+h3 {
+
+}
+
+footer {
+
+}
