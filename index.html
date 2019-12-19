@@ -7,7 +7,7 @@
     <title>Hideo Kojima Name Generator</title>
     <link href="styles/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="index.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <h1 class="title-name"> KOJIMA NAME GENERATOR</h1>
@@ -37,10 +37,10 @@
         <div class="section-num">
             <div class="section-header">Section 2: Personal Information</div>
                 <div class="section-info"> Kojima's characters have names that are directly related to their own character traits. This information will make sure your name fits your personality. Please fill in the blanks.</div>
-                    <a class="section-steps">1. What is your full name? <input type="text" id="fullName"><button onclick="sec6Num1()">Submit</button> <br>
+                    <a class="section-steps">1. What is your full name? <input type="text" id="fullName"><button onclick="sec2Num1()">Submit</button> <br>
                     2. What do you do at your occupation? <input type="text" id="occupation"><button>Submit</button><br>
                         <div class="text-indent">2a. Condense the verb in your answer into a single -er noun. (e.g if you are a sheep farmer, your answer will be "farmer")<input type="text" id="oneOccupation"><button onclick="sec7Num2a()">Submit</button><br></div>
-                    3. What was your first pet's specific species/breed? If you never had a pet, please answer with an animal you wish you owned. <input type="text" id="petType"><button onclick="sec8Num1">Submit</button><br>
+                    3. What was your first pet's specific species/breed? If you never had a pet, please answer with an animal you wish you owned. <input type="text" id="petType"><button onclick="sec8Num1()">Submit</button><br>
                     4. What's your most embarassing childhood memory? Be specific.<input type="text" id="memory"><button>Submit</button><br>
                         <div class="text-indent"> 4a. Condense this story into two words. <input type="text" id="twoMemory"><button onclick="sec9Num2Three()">Submit</button><br></div>
                     5. What is the object you'd least like to be stabbed by?<input type="text" id="stabbedBy"><button onclick="sec11Num1()">Submit</button><br>
@@ -97,7 +97,7 @@
                                 <input type="checkbox"></input>
                             </label>
                         </div>
-                        <div class="table">8: You are how you currently are. Please add your answer from Section 2, Number 11 to the beginning of your name.
+                        <div class="table">8: You are how you currently are. <span id="display_bodyin"></span> is the beginning of your name: 
                             <label>
                                 <input type="checkbox"></input>
                             </label>
@@ -161,7 +161,7 @@
         <div class="section-num">
             <div class="section-header">Section 6: Normal Name</div>
                 <div class="section-info">Kojima's early work includes lots of characters that have names that are widely considered to be "normal". Was this just because, in the early years, he didn't have the power to say, "I'm Hideo Kojima, I can name someone Die-Hardman if I want to" without people questioning him? Probably.</div>
-                    <a class="section-steps"> 1. ________<!--Insert Sec 2 #1 Answer Here--> This is your full name.<br>
+                    <p class="section-steps"> 1. This is your full name: <span id= "display_namein"></span><br></p>
                     2.+ ________ Conditions you accured in Section 4. <!--Section 4 Conditions--><br>
                     <button onclick="clickForName6()">Click Here To Generate Your Name</button><br>
                     3. That is your name: _______<!--Insert Both Here--> Your Kojima name is probably just your actual name. Sorry if you were expecting something wild. Skip to Section 13.<br>
@@ -170,24 +170,24 @@
         <div class="section-num">
             <div class="section-header">Section 7: Occupational Name</div>
                 <div class="section-info">Kojima's characters tend to be driven by the work that they do. that often carries over to their names. You, too, can be nothing more than your job.</div>
-                    <a class="section-steps"> 1. _______<!--Insert Sec 2 # 2a--> This is your last name.<br>
+                    <p class="section-steps"> 1. This is your last name: <span id = "display_jobin"></span><br></p>
                     2. Roll a d4. Use this table to determine your first name:
-                        <div class="table">1: _______<!--Insert Sec 2, # 15-->
+                        <div class="table">1: <span id="display_personin"></span>
                             <label>
                                 <input type="checkbox"></input>
                             </label>
                         </div>
-                        <div class="table">2: _______<!--Insert Sec 2, # 6-->
+                        <div class="table">2: <span id="display_goodin"></span>
                             <label>
                                 <input type="checkbox"></input>
                             </label>
                         </div>
-                        <div class="table">3: _______<!--Insert Sec 2, # 13-->
+                        <div class="table">3: <span id="display_carrotin"></span>
                             <label>
                                 <input type="checkbox"></input>
                             </label>
                         </div>
-                        <div class="table">4: _______<!--Insert Sec 3, # 16-->
+                        <div class="table">4: <span id="display_kurtin"></span>
                             <label>
                                 <input type="checkbox"></input>
                             </label>
@@ -200,9 +200,9 @@
         <div class="section-num">
             <div class="section-header">Section 8: Horny Name</div>
                 <div class="section-info">Kojima's characters and stories are irrevocably horny. Weirdly horny, sure, but horny nonetheless.</div>
-                    <a class="section-steps">1. ________<!---Insert Sec 2 #3-->This is Your last name.<br>
+                    <a class="section-steps">1. This is your last name: <span id = "display_petin"></span><br>
                     2. Roll a d4. Use this table to determine your first name:
-                        <div class="table">1: _______<!--Insert Sec 2 #12-->
+                        <div class="table">1: <span id= "display_matterin"></span>
                             <label>
                                 <input type="checkbox"></input>
                             </label>
@@ -212,12 +212,12 @@
                                 <input type="checkbox"></input>
                             </label>
                         </div>
-                        <div class="table">3: _______<!--Insert Sec 2 # 6-->
+                        <div class="table">3: <span id="display_goodin"></span>
                             <label>
                                 <input type="checkbox"></input>
                             </label>
                         </div>
-                        <div class="table">4: _______<!--INSERT SEC 2 # 14-->
+                        <div class="table">4: <span id="display_signin"></span>
                             <label>
                                 <input type="checkbox"></input>
                             </label>
@@ -237,22 +237,22 @@
                 <div class="section-info"> Kojima loves to make people have names that start with the word "The" and they usually symbolize fears or unstoppable forces. You are now that unstoppable force.</div>
                     <a class="section-steps"> 1. Your first name is "The".<br>
                     2. Roll a d4. Use this table to determine your last name:
-                        <div class="table">1: _______<!--Insert sec 2 #8-->
+                        <div class="table">1: <span id="display_intantin"></span>
                             <label>
                                 <input type="checkbox"></input>
                             </label>
                         </div>
-                        <div class="table">2: _______<!--Insert sec 2 #9-->
+                        <div class="table">2: <span id="display_tanin"></span>
                             <label>
                                 <input type="checkbox"></input>
                             </label>
                         </div>
-                        <div class="table">3: _______<!--Insert sec 2 # 4a-->
+                        <div class="table">3: <span id="display_memin"></span>
                             <label>
                                 <input type="checkbox"></input>
                             </label>
                         </div>
-                        <div class="table">4: _______<!--Sec 3 #20-->
+                        <div class="table">4: <span id="display_warin"></span>
                             <label>
                                 <input type="checkbox"></input>
                             </label>
@@ -266,34 +266,34 @@
         <div class="section-num">
             <div class="section-header">Section 10: Cool Name</div>
                 <div class="section-info">Kojima loves to be cool. Sometimes, his idea of cool is a bit strange, but it is always cool to Hideo Kojima, and that's what matters.</div>
-                    <a class="section-steps"> 1. ______<!--Insert sec 3 #21a-->This is your first name.<br>
+                    <a class="section-steps"> 1. This is your first name: <span id="display_madin"></span><br>
                     2. Roll a d6. This table will determine your last name:
-                        <div class="table"> 1: ______<!--sec 3 # 17-->
+                        <div class="table"> 1: <span id="display_kubrikin"></span>
                             <label>
                                 <input type="checkbox"></input>
                             </label>
                         </div>
-                        <div class="table">2: ______<!--sec 3 #18-->
+                        <div class="table">2: <span id="display_joyin"></span>
                             <label>
                                 <input type="checkbox"></input>
                             </label>
                         </div>
-                        <div class="table">3: ______<!--sec 3 #19-->
+                        <div class="table">3: <span id="display_termin"></span>
                             <label>
                                 <input type="checkbox"></input>
                             </label>
                         </div>
-                        <div class="table">4: ______<!--sec 2 #6-->
+                        <div class="table">4: <span id="display_goodin"></span>
                             <label>
                                 <input type="checkbox"></input>
                             </label>
                         </div>
-                        <div class="table">5: ______<!--sec 2 #8-->
+                        <div class="table">5: <span id="display_intan"></span>
                             <label>
                                 <input type="checkbox"></input>
                             </label>
                         </div>
-                        <div class="table">6: ______<!--sec 2 #13-->
+                        <div class="table">6: <span id="display_soundin"></span>
                             <label>
                                 <input type="checkbox"></input>
                             </label>
@@ -306,7 +306,7 @@
         <div class="section-num">
             <div class="section-header">Section 11: Violent name</div>
                 <div class="section-info">Sometimes, a Kojima name can be very threatening and violent, like Sniper Wolf, or The Fury. Now you can also be threatening and violent.</div>
-                    <a class="section-steps">1. ______<!--insert sec2 # 5-->This is your last name.<br>
+                    <a class="section-steps">1. This is your last name: <span id="display_stabin"></span><br>
                     2. Roll a d4. Use this table to determine your last name:
                         <div class="table">1: ______<!--sec 3 #19-->
                             <label>
@@ -335,7 +335,7 @@
         <div class="section-num">
             <div class="section-header">Section 12: Name That Lacks Subtext</div>
                 <div class="section-info"> Sometimes, Kojima gives up and just names a character exacytly what they are. Congradulations. You are exactly what you do.</div>
-                    <a class="section-steps">5. Answers from Section 2, Number 10: _______<!--insert here-->This is your full name.<br>
+                    <a class="section-steps">5. This is your full name: <span id="display_quizin"><br>
                     6.+______ Conditions accured in Section 4.<!--insert sec 4--><br>
                     <button onclick="clickForName12()">Click Here To Generate Your Name</button><br>
                     7. _____<!--insert all-->That's your name. Skip to Section 13.<br>
